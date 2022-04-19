@@ -1,0 +1,594 @@
+{
+  "id": "50f7d3a7-745a-420d-a6cf-3dd793d60077",
+  "version": "2.0",
+  "name": "Zaka-Zaka testing ",
+  "url": "https://zaka-zaka.com",
+  "tests": [{
+    "id": "6c4d43bc-831d-4936-8f30-ef27f3861a3a",
+    "name": "Регистрация и вход в аккаунт",
+    "commands": [{
+      "id": "3cac47b1-26d6-46f3-8769-17ba2bcc8dda",
+      "comment": "",
+      "command": "open",
+      "target": "/profile/auth",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a0ba26a-5b63-4c25-867e-9de7d9a396f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "876x817",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff9d273a-b794-4736-ac3f-28ce31bb81d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btns:nth-child(1) > .register",
+      "targets": [
+        ["css=.btns:nth-child(1) > .register", "css:finder"],
+        ["xpath=//div[@onclick=\"window.location.href='/profile/register/'\"]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df24d696-5ba7-45a5-94d4-e7d17145ea02",
+      "comment": "",
+      "command": "click",
+      "target": "name=RegForm[login]",
+      "targets": [
+        ["name=RegForm[login]", "name"],
+        ["css=.RegForm_email", "css:finder"],
+        ["xpath=//input[@name='RegForm[login]']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aea8f124-9d05-43d4-bf64-70e60a183883",
+      "comment": "",
+      "command": "type",
+      "target": "name=RegForm[login]",
+      "targets": [
+        ["name=RegForm[login]", "name"],
+        ["css=.RegForm_email", "css:finder"],
+        ["xpath=//input[@name='RegForm[login]']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "gehutterx@mail.ru"
+    }, {
+      "id": "154bc38f-29e7-4c74-8ff2-0456604b9076",
+      "comment": "",
+      "command": "click",
+      "target": "name=RegForm[login_repeat]",
+      "targets": [
+        ["name=RegForm[login_repeat]", "name"],
+        ["css=.RegForm_email_repeat", "css:finder"],
+        ["xpath=//input[@name='RegForm[login_repeat]']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aff5cd8b-b6e8-4c2a-8b69-cd22aaa62090",
+      "comment": "",
+      "command": "type",
+      "target": "name=RegForm[login_repeat]",
+      "targets": [
+        ["name=RegForm[login_repeat]", "name"],
+        ["css=.RegForm_email_repeat", "css:finder"],
+        ["xpath=//input[@name='RegForm[login_repeat]']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "gehutterx@mail.ru"
+    }, {
+      "id": "3e0a1d50-60ab-4a00-815b-f9d897288b65",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c311425-6740-4dad-a195-85d9e556af71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6d958a3-edc6-44ab-ac00-355d256ddd2f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "152147ab-0438-4c8e-8e30-2806b32ac969",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(8)",
+      "targets": [
+        ["css=label:nth-child(8)", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я согласен(на) с политикой конфиденциальности, пользовательским соглашением и даю согласие на обработку персональных данных.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "522d5b17-b796-41b1-b030-cf802f9e226e",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "939e25e0-e03b-43b6-bf08-b96ee04f8963",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Личный кабинет",
+      "targets": [
+        ["linkText=Личный кабинет", "linkText"],
+        ["css=.register-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Личный кабинет')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://zaka-zaka.com/profile/')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Личный кабинет')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f21b6ad-c917-4a90-bb88-b97899b6db27",
+      "comment": "",
+      "command": "click",
+      "target": "name=LoginForm[login]",
+      "targets": [
+        ["name=LoginForm[login]", "name"],
+        ["css=.LoginForm_email", "css:finder"],
+        ["xpath=//input[@name='LoginForm[login]']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "989d277b-d552-4031-9f89-368ed11b3b9f",
+      "comment": "",
+      "command": "type",
+      "target": "name=LoginForm[login]",
+      "targets": [
+        ["name=LoginForm[login]", "name"],
+        ["css=.LoginForm_email", "css:finder"],
+        ["xpath=//input[@name='LoginForm[login]']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "gehutterx@mail.ru"
+    }, {
+      "id": "0151540f-0869-41f8-b4e4-f079a3e58c7b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "970b3272-ad8f-438c-a48a-29e13d7ad673",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b928e2a-de39-46e1-ac47-75f0cf282818",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f142205-358a-4d4a-8daa-3d43b37cfacd",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4af523e6-a1d2-4fd9-ae8d-f1029dca5791",
+      "comment": "",
+      "command": "click",
+      "target": "name=LoginForm[password]",
+      "targets": [
+        ["name=LoginForm[password]", "name"],
+        ["css=.password", "css:finder"],
+        ["xpath=//input[@name='LoginForm[password]']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39426c3f-3ad3-40d1-a0d3-b29576b1da69",
+      "comment": "",
+      "command": "type",
+      "target": "name=LoginForm[password]",
+      "targets": [
+        ["name=LoginForm[password]", "name"],
+        ["css=.password", "css:finder"],
+        ["xpath=//input[@name='LoginForm[password]']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "vfDwRfNtar"
+    }, {
+      "id": "7a77dc9c-fb6d-46f6-a333-38159c523c3f",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=button:nth-child(9)", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "20fef921-060d-4dd4-a1c8-0cf19a4e9c5d",
+    "name": "Добавление товара в корзину",
+    "commands": [{
+      "id": "52f23c3e-5e0c-464b-96cc-0104a44288a5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2786c820-dc65-4822-89d1-8087134c9bc4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "876x817",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88193950-9a26-4c39-b1fb-2d608f7beef4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Каталог",
+      "targets": [
+        ["linkText=Каталог", "linkText"],
+        ["css=.hide-pre-search > .catalog", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://zaka-zaka.com/search/')])[2]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1ef06ad-c8db-4fb7-8cb2-504688bab2c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover .game-block-image",
+      "targets": [
+        ["css=.hover .game-block-image", "css:finder"],
+        ["xpath=//a[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c477a457-da6d-4ec2-80fe-d498b1c7c4d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-buy-btn--click > span",
+      "targets": [
+        ["css=.product-buy-btn--click > span", "css:finder"],
+        ["xpath=//div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bae127e0-222f-4889-9f4e-0a56f1939708",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2) > span",
+      "targets": [
+        ["css=.btn:nth-child(2) > span", "css:finder"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Перейти в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "005f65d1-f2d1-4ffa-b00c-0de2939829d9",
+    "name": "Удаление товара из корзины ",
+    "commands": [{
+      "id": "bf9c4b2f-a5f4-4ff5-aa14-7ab488d381ed",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77da40ef-b29f-4ebc-8f64-375d73151c5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa95a924-d621-4438-9d90-5ccaeaa0a049",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Корзина 1",
+      "targets": [
+        ["linkText=Корзина 1", "linkText"],
+        ["css=.basket-btn", "css:finder"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Корзина 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a7aca1-d6ce-400c-b52f-927017e09d08",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти в корзину",
+      "targets": [
+        ["linkText=Перейти в корзину", "linkText"],
+        ["css=.basket-menu--btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти в корзину')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec92baec-e03b-434e-962c-9cb09b9c88eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg",
+      "targets": [
+        ["css=svg", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d0bedc6e-f106-4f53-b94a-96815b89697a",
+    "name": "Проверка фильтра по цене",
+    "commands": [{
+      "id": "07499792-a3a9-4051-8405-5702dee342d0",
+      "comment": "",
+      "command": "open",
+      "target": "/search/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2842f81e-55b2-4af7-b152-7dcc098e92a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f857ab53-bd02-48a8-a7de-50bb1e11ec3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Каталог",
+      "targets": [
+        ["linkText=Каталог", "linkText"],
+        ["css=.hide-pre-search > .catalog", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://zaka-zaka.com/search/')])[2]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48a77a43-164a-4df0-9c2c-61734c0a36b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-panel",
+      "targets": [
+        ["css=.filter-panel", "css:finder"],
+        ["xpath=//div[4]/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1e0d1a9-4e26-4d90-a697-fd23ed22f047",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ui-state-active",
+      "targets": [
+        ["css=.ui-state-active", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'2700')]", "xpath:innerText"]
+      ],
+      "value": "79.21875,12"
+    }, {
+      "id": "a0199080-89d2-454d-a5b6-720229896710",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ui-state-active",
+      "targets": [
+        ["css=.ui-state-active", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'2700')]", "xpath:innerText"]
+      ],
+      "value": "1.21875,21"
+    }, {
+      "id": "b76a3a56-cb0f-413f-913e-3bcd2f0801f9",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ui-state-active",
+      "targets": [
+        ["css=.ui-state-active", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'2700')]", "xpath:innerText"]
+      ],
+      "value": "1.21875,21"
+    }, {
+      "id": "22c4c36f-ec9d-41cb-bf8d-6242fd70da6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-panel",
+      "targets": [
+        ["css=.filter-panel", "css:finder"],
+        ["xpath=//div[4]/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33e48b1f-ee8d-43cf-b314-3273dde93474",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ui-state-active > label",
+      "targets": [
+        ["css=.ui-state-active > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2140')]", "xpath:innerText"]
+      ],
+      "value": "-73.375,12"
+    }, {
+      "id": "3e50cc5b-f32e-4f13-8296-08004b086e31",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ui-state-active",
+      "targets": [
+        ["css=.ui-state-active", "css:finder"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2140')]", "xpath:innerText"]
+      ],
+      "value": "24.625,14"
+    }, {
+      "id": "12d696df-a7e7-42fb-931a-131720201cbc",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ui-state-active",
+      "targets": [
+        ["css=.ui-state-active", "css:finder"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2140')]", "xpath:innerText"]
+      ],
+      "value": "24.625,14"
+    }, {
+      "id": "20f5d1a1-1317-4b77-9978-236cf1b17236",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-focus > label",
+      "targets": [
+        ["css=.ui-state-focus > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2140')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "358f1d3f-f638-4221-a172-f54d721e7485",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ui-state-active > label",
+      "targets": [
+        ["css=.ui-state-active > label", "css:finder"],
+        ["xpath=//span[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'3090')]", "xpath:innerText"]
+      ],
+      "value": "-12.65625,15"
+    }, {
+      "id": "6c8c8be1-2af7-4a28-b031-8fa59980c01a",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ui-state-active",
+      "targets": [
+        ["css=.ui-state-active", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'3090')]", "xpath:innerText"]
+      ],
+      "value": "36.34375,13"
+    }, {
+      "id": "2329f80e-de54-4abb-ad19-4a030fca237a",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ui-state-active",
+      "targets": [
+        ["css=.ui-state-active", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'3090')]", "xpath:innerText"]
+      ],
+      "value": "36.34375,13"
+    }, {
+      "id": "7f63b345-dd8c-41ae-90fc-43af1f000a9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-focus > label",
+      "targets": [
+        ["css=.ui-state-focus > label", "css:finder"],
+        ["xpath=//span[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'3090')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea961868-b86a-410b-989d-0de83e2f1728",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.ui-state-hover > label",
+      "targets": [
+        ["css=.ui-state-hover > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2540')]", "xpath:innerText"]
+      ],
+      "value": "23.765625,8"
+    }, {
+      "id": "66fc75d9-109d-45de-89d6-f411d5a7085c",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.ui-state-hover > label",
+      "targets": [
+        ["css=.ui-state-hover > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2540')]", "xpath:innerText"]
+      ],
+      "value": "23.765625,8"
+    }, {
+      "id": "2bdd21a7-27a6-4667-a0ef-6f2bc54ed90c",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.ui-state-hover > label",
+      "targets": [
+        ["css=.ui-state-hover > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2540')]", "xpath:innerText"]
+      ],
+      "value": "23.765625,8"
+    }, {
+      "id": "1e307836-f25e-42af-9bd3-f280f512d3a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > label",
+      "targets": [
+        ["css=.ui-state-hover > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'2540')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3f3a06b9-96f1-4e09-a66e-80f7cf6e6827",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6c4d43bc-831d-4936-8f30-ef27f3861a3a"]
+  }],
+  "urls": ["https://zaka-zaka.com/"],
+  "plugins": []
+}
